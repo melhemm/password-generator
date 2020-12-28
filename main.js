@@ -51,11 +51,11 @@ generateRandomSymbols = () => {
 checker = () => {
   const checkArray = []
   if (upperCaseLetters.checked) {
-    checkArray.push(generateSmallLetters())
+    checkArray.push(generateCapitalLetters())
   }
 
-  if (smallLetters.checked) {
-    checkArray.push(generateCapitalLetters())
+  if (lowerCaseLetters.checked) {
+    checkArray.push(generateSmallLetters())
   }
 
   if (useNumbers.checked) {
