@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Генератор паролей</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>Генератор паролей</h1>
+      
+    </div>
+  </header>
+
+ <section class="main-section">
+    <div class="container section-body">
+      <h3>Просто заполните форму ниже и нажмите кнопку "Создать пароль"</h3>
+      <div class="form-container">
+        <label for="password-length">Длина пароля:</label>
+        <input id="password-length" value="8" type="number" min="6" max="40" />
+      </div>
+      <div class="form-container">
+        <label for="upper-case-letters">Прописные буквы</label>
+        <input id="upper-case-letters" type="checkbox" />
+      </div>
+      <div class="form-container">
+        <label for="lower-case-letters">Строчные буквы</label>
+        <input id="lower-case-letters" type="checkbox" />
+      </div>
+      <div class="form-container">
+        <label for="use-number">Цифры</label>
+        <input id="use-number" type="checkbox" />
+      </div>
+      <div class="form-container">
+        <label for="use-symbol">Спец. символы %,*,),?, @,#,$,~</label>
+        <input id="use-symbol" type="checkbox" />
+      </div>
+      <button class="generate" id="submit">
+        Создать пароль
+      </button>
+      <div class="password-container">
+        <div class="password">
+          <span id="results"></span>
+        </div>
+        <button id="copy-password">Copy</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
